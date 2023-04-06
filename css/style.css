@@ -1,0 +1,220 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height: 60px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Navigation bar: Logo and image */
+#logo{
+    margin: 0px 26px;
+}
+#logo img{
+    margin: 7px 7px;
+    height: 65px;
+}
+
+/* Navigation bar: List styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Merriweather', serif;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 220px;
+    /* height: 535px; */
+    height: 635px;
+}
+#home::before{
+    content: "";
+    background: url("../bg.jpeg") no-repeat center center/cover; /*starting me ../ isliye lagaya gya bcoz hme sbse pehle css wale folder se bahar nikalna padega.*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 704px;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#home h1{
+    text-align: center;
+    /* color: white; */
+    font-family: 'Playfair Display', serif;
+}
+#home p{
+    text-align: center;
+    /* color: white; */
+    font-size: 1.9rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Secondary section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 12px;
+    margin: 25px 10px;
+    border-radius: 23px;
+    background-color: rgb(247, 214, 214);
+}
+#services .box img{
+    height: 189px;
+    width: 160px; 
+    display: block;
+    margin: auto;/*margin auto works when display is block*/
+}
+#services .box p{
+    font-family: 'Playfair Display', serif;
+}
+#services{}
+#services{}
+#services{}
+
+/* Clients section */
+#client-section{
+    position: relative;
+    /* height: 344px; */
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../food_4.jpeg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.client-item{
+    padding: 34px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 202px;
+}
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.webp') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Merriweather', serif;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 12px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Merriweather', serif;
+    font-size: 2.38rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 15px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
